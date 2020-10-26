@@ -1,0 +1,26 @@
+.modalidade-container{
+    width: 1500px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.modalidade-container section.form{
+    justify-content: center;
+    width: 100%;
+    max-width: 350px;
+    margin-right: 200px;
+}
+
+.modalidade-container section.form form{
+    margin-top: 10px;
+
+}
+
+.modalidade-container section.form form h1{
+    font-size: 32px;
+    margin-bottom: 32px;     
+}
+

@@ -1,0 +1,25 @@
+.professora-container{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.professora-container section.form{
+    justify-content: center;
+    width: 100%;
+    max-width: 350px;
+    margin-top: 150px;
+}
+
+
+.professora-container section.form form h2{
+    margin-bottom: 32px;     
+}
+
+.group{
+    margin-top: 32px;   
+    font-size: large;  
+}

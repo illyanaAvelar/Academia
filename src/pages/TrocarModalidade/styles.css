@@ -1,0 +1,44 @@
+.modalidades-container{
+    width: 1500px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 300px;
+    margin-bottom: 300px;
+}
+
+.modalidades-container section.form{
+    justify-content: center;
+    width: 100%;
+    max-width: 350px;
+    margin-right: 200px;
+}
+
+.modalidades-container section.form form{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.modalidades-container section.form form label{
+    font-size: 18px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.caixa {
+    height: 20px;
+    margin-top: 25px;
+    width: 30px;
+    margin-right: 100px;
+    background: url('../../assets/check.png');
+}
+
+.group{
+    margin-top: 32px;   
+    font-size: large;  
+}
