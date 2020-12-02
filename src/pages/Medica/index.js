@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom'
 import { FiLogIn } from 'react-icons/fi';
 import Dropdown from 'react-dropdown';
@@ -6,6 +6,7 @@ import 'react-dropdown/style.css';
 import './styles.css';
 
 export default function Medica(){
+    const [goBack, setGoBack] = useState(false);
     const history = useHistory();
    
     const options = [
@@ -13,9 +14,19 @@ export default function Medica(){
     ];
       
     const defaultOption = options[0];
+    
 
-    async function aluno(e){
-        history.push('/chooselogon');
+
+    function componentDidMount() {
+        setTimeout(() => {
+            setGoBack(true);
+        }, 2000)
+    }
+
+    async function handleSubmit () {
+        await componentDidMount();
+        if(goBack)
+        history.push('/chooselogon');     
     }
 
     return(
@@ -34,7 +45,7 @@ export default function Medica(){
                     Situação do paciente
                     <Dropdown options={options} value={defaultOption} placeholder="situação do paciente" />
                 </div>
-                <button className = "button" onClick={aluno}>Cadastrar ficha</button>
+                <button className = "button" onClick={handleSubmit}>Cadastrar ficha</button>
 
 
                 <Link className = "back-link" to = '/chooselogon'>
